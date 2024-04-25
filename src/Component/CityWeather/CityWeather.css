@@ -1,0 +1,190 @@
+#WeatherMain{
+    background-color: rgb(216, 219, 222);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40rem;
+    height: 30rem;
+    position: absolute;
+    left: 430px;
+    top: 150px;
+    z-index: 50;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(244, 238, 238);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: rgba(10, 33, 65, 0.973) 2px 2px 3px;
+}
+
+#cityName{
+    font-size: xx-large;
+    text-align: left;
+    padding: 0 0 0 15px;
+}
+
+#closeBtn{
+    width: 2rem;
+    height: 2rem;
+    font-size: xx-large;
+    color: red;
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    top: 3px;
+    left: 590px;
+    cursor: pointer;
+}
+
+#units{
+    display: inline-block;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 4px;
+    position: relative;
+    left: 260px;
+    top: -20px;
+    cursor: pointer;
+}
+#units:hover{
+    transform: scale(105%);
+    font-size: large;
+    box-shadow: rgba(110, 165, 207, 0.803) 0px 1px 2px 0px, rgba(87, 148, 195, 0.814) 0px 1px 3px 1px;
+}
+
+#weatherIcon{
+    width: 20px;
+    height: 20px;
+}
+
+
+#weatherDataBox{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 20rem;
+    text-align: left;
+    margin: 0 0 0 15px;
+    font-weight: bold;
+}
+
+#wrongInputMain{
+    width: 50rem;
+    position: relative;
+    top: 100px;
+    left: 350px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    font-weight: 700;
+    color: red;
+}
+
+
+
+@media screen and (max-width:1024px) {
+    #WeatherMain{
+        left: 300px;
+    }   
+
+    #wrongInputMain{
+        left: 200px;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    #WeatherMain{
+        left: 250px;
+        width: 30rem;
+        height: 23rem;
+    }   
+
+    #cityName{
+        font-size: x-large;
+    }
+
+    #closeBtn{
+        left: 440px;
+    }
+
+    #units{
+        left: 180px;
+    }
+    
+    #weatherDataBox{
+        height: 17rem;
+        gap: 18px;
+    }
+
+    #wrongInputMain{
+        width: 20rem;
+        left: 320px;
+    }
+}
+
+
+@media screen and (max-width:426px) {
+    #WeatherMain{
+        left: 12px;
+        top: 120px;
+        width: 25rem;
+    }   
+
+    #closeBtn{
+        left: 360px;
+    }
+
+    #units{
+        top: -15px;
+        left: 150px;
+    }
+
+    #wrongInputMain{
+        left: 50px;
+    }
+}
+
+
+
+
+@media screen and (max-width:376px) {
+    #WeatherMain{
+        left: 8px;
+        width: 22rem;
+    }   
+
+    #closeBtn{
+        left: 310px;
+    }
+
+    #units{
+        top: -15px;
+        left: 120px;
+    }
+
+    #wrongInputMain{
+        left: 40px;
+    }
+}
+
+
+@media screen and (max-width:321px) {
+    #WeatherMain{
+        left: 8px;
+        width: 19rem;
+    }   
+
+    #closeBtn{
+        left: 270px;
+    }
+
+    #units{
+        top: -15px;
+        left: 100px;
+    }
+
+    #wrongInputMain{
+        width: 19rem;
+        left: 10px;
+    }
+}
